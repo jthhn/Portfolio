@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JITHIN A M</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <body>
+        <nav class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">My Portfolio</a>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+                <div class="hidden md:block">
+                    <button onclick="toggleModal()" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Hire Me</button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Modal -->
+        <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+                <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+                <p>Email: <a href="mailto:your-email@example.com" class="text-blue-500">your-email@example.com</a></p>
+                <p>Phone: <span class="text-gray-700">+123-456-7890</span></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-500">linkedin.com/in/yourprofile</a></p>
+                <button onclick="toggleModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Close</button>
+            </div>
+        </div>
+    
+        <section id="about" class="h-screen bg-gray-100 flex items-center justify-center">About Section</section>
+        <section id="projects" class="h-screen bg-gray-200 flex items-center justify-center">Projects Section</section>
+        <section id="skills" class="h-screen bg-gray-300 flex items-center justify-center">Skills Section</section>
+        <section id="contact" class="h-screen bg-gray-400 flex items-center justify-center">Contact Section</section>
+    
+        <script>
+            function toggleModal() {
+                const modal = document.getElementById('contactModal');
+                modal.classList.toggle('hidden');
+            }
+        </script>
+</html>

@@ -1,0 +1,12 @@
+portfolio/
+│
+├── index.html          # Main HTML file
+├── style.css           # CSS file for styling
+├── script.js           # JavaScript file (optional)
+├── assets/
+│   ├── resume.pdf      # PDF file (e.g., your resume)
+│   └── images/         # Images folder
+│       ├── profile.jpg # Example profile image
+│       ├── project1.png
+│       └── project2.png
+
