@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: #F8D030;
+}
+
+header {
+    background-color: #ff0000;
+    margin-top: auto;
+    height: 
+
+}
+
+.header-icons img {
+    height: 50px;
+}
+
+.navbar {
+    background-color: #3b4cca;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Center the nav items */
+    align-items: center;      /* Vertically align the items */
+    border: 5px solid #ff0000;
+    position: sticky;
+    top: 0;
+    z-index: 10;  /* Ensure it's on top of other content */
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 14px;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-section-content{
+    position: sticky;
+    top: 0px;
+}
